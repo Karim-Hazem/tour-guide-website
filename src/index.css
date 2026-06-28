@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette */
+  --color-clay: #c2693c;
+  --color-clay-dark: #a4542d;
+  --color-nile: #1b4b5a;
+  --color-nile-dark: #143842;
+  --color-sand: #faf6f0;
+  --color-sand-dark: #efe7da;
+  --color-gold: #c9a24b;
+
+  /* Semantic tokens */
+  --color-background: #faf6f0;
+  --color-foreground: #21201c;
+  --color-card: #ffffff;
+  --color-card-foreground: #21201c;
+  --color-primary: #c2693c;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1b4b5a;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #c9a24b;
+  --color-accent-foreground: #21201c;
+  --color-muted: #efe7da;
+  --color-muted-foreground: #6b6457;
+  --color-border: #e4dccd;
+  --color-ring: #c2693c;
+
+  /* Typography */
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Radius */
+  --radius: 0.5rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+  }
+}
